@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE zia SYSTEM "zia_conf.dtd">
+<zia>
+  <network>
+    <port>8080</port>
+    <address>all</address>
+  </network>
+  <server>
+    <name>localhost</name>
+    <root>../www</root>
+    <cgi>../www/cgi-bin</cgi>
+    <mod>
+      <folder>.</folder>
+      <load_mod>modtest/mod_test.so;psp/mod_psp.so</load_mod>
+    </mod>
+  </server>
+  <intern>
+    <workers>10</workers>
+    <thresold>8</thresold>
+    <wait>30</wait>
+  </intern>
+</zia>
